@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   deleteTodo(index) {
-    this.setState({ todos: [this.state.todos.filter( newIndex => newIndex !== index )] })
+    this.setState({ todos: this.state.todos.filter((element, newIndex) => newIndex !== index) });
   }
 
   handleChange(e) {
